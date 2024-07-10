@@ -1,0 +1,83 @@
+[debug] [2024-06-29T14:29:41.067Z] ----------------------------------------------------------------------
+[debug] [2024-06-29T14:29:41.070Z] Command:       /Users/maggiewang/.nvm/versions/node/v20.15.0/bin/node /Users/maggiewang/.nvm/versions/node/v20.15.0/bin/firebase deploy
+[debug] [2024-06-29T14:29:41.071Z] CLI Version:   13.12.0
+[debug] [2024-06-29T14:29:41.071Z] Platform:      darwin
+[debug] [2024-06-29T14:29:41.071Z] Node Version:  v20.15.0
+[debug] [2024-06-29T14:29:41.072Z] Time:          Sat Jun 29 2024 22:29:41 GMT+0800 (Taipei Standard Time)
+[debug] [2024-06-29T14:29:41.072Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-29T14:29:41.162Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-29T14:29:41.162Z] > authorizing via signed-in user (maggie.mapleleaf@gmail.com)
+[debug] [2024-06-29T14:29:41.162Z] [iam] checking project maggieresume-ea2fd for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-06-29T14:29:41.165Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/maggieresume-ea2fd:testIamPermissions [none]
+[debug] [2024-06-29T14:29:41.165Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/maggieresume-ea2fd:testIamPermissions x-goog-quota-user=projects/maggieresume-ea2fd
+[debug] [2024-06-29T14:29:41.165Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/maggieresume-ea2fd:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-06-29T14:29:41.446Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/maggieresume-ea2fd:testIamPermissions 200
+[debug] [2024-06-29T14:29:41.446Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/maggieresume-ea2fd:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-06-29T14:29:41.447Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/maggieresume-ea2fd [none]
+[debug] [2024-06-29T14:29:41.693Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/maggieresume-ea2fd 200
+[debug] [2024-06-29T14:29:41.693Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/maggieresume-ea2fd {"projectId":"maggieresume-ea2fd","projectNumber":"449740542656","displayName":"maggieresume","name":"projects/maggieresume-ea2fd","resources":{"hostingSite":"maggieresume-ea2fd"},"state":"ACTIVE","etag":"1_b8afaa89-33f6-4f46-91ef-a1b67e484208"}
+[info] 
+[info] === Deploying to 'maggieresume-ea2fd'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2024-06-29T14:29:41.699Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/maggieresume-ea2fd/versions [none]
+[debug] [2024-06-29T14:29:41.699Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/maggieresume-ea2fd/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2024-06-29T14:29:42.633Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/maggieresume-ea2fd/versions 200
+[debug] [2024-06-29T14:55:54.545Z] ----------------------------------------------------------------------
+[debug] [2024-06-29T14:55:54.549Z] Command:       /Users/maggiewang/.nvm/versions/node/v20.15.0/bin/node /Users/maggiewang/.nvm/versions/node/v20.15.0/bin/firebase deploy
+[debug] [2024-06-29T14:55:54.550Z] CLI Version:   13.12.0
+[debug] [2024-06-29T14:55:54.550Z] Platform:      darwin
+[debug] [2024-06-29T14:55:54.550Z] Node Version:  v20.15.0
+[debug] [2024-06-29T14:55:54.550Z] Time:          Sat Jun 29 2024 22:55:54 GMT+0800 (Taipei Standard Time)
+[debug] [2024-06-29T14:55:54.551Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-29T14:55:54.646Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-29T14:55:54.646Z] > authorizing via signed-in user (maggie.mapleleaf@gmail.com)
+[debug] [2024-06-29T14:55:54.647Z] [iam] checking project maggieresume-ea2fd for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-06-29T14:55:54.649Z] > refreshing access token with scopes: []
+[debug] [2024-06-29T14:55:54.651Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-06-29T14:55:54.651Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-06-29T14:55:54.815Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-06-29T14:55:54.815Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-06-29T14:55:54.985Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/maggieresume-ea2fd:testIamPermissions [none]
+[debug] [2024-06-29T14:55:54.986Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/maggieresume-ea2fd:testIamPermissions x-goog-quota-user=projects/maggieresume-ea2fd
+[debug] [2024-06-29T14:55:54.986Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/maggieresume-ea2fd:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-06-29T14:55:55.804Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/maggieresume-ea2fd:testIamPermissions 200
+[debug] [2024-06-29T14:55:55.804Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/maggieresume-ea2fd:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-06-29T14:55:55.805Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/maggieresume-ea2fd [none]
+[debug] [2024-06-29T14:55:56.071Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/maggieresume-ea2fd 200
+[debug] [2024-06-29T14:55:56.071Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/maggieresume-ea2fd {"projectId":"maggieresume-ea2fd","projectNumber":"449740542656","displayName":"maggieresume","name":"projects/maggieresume-ea2fd","resources":{"hostingSite":"maggieresume-ea2fd"},"state":"ACTIVE","etag":"1_b8afaa89-33f6-4f46-91ef-a1b67e484208"}
+[info] 
+[info] === Deploying to 'maggieresume-ea2fd'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2024-06-29T14:55:56.077Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/maggieresume-ea2fd/versions [none]
+[debug] [2024-06-29T14:55:56.077Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/maggieresume-ea2fd/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2024-06-29T14:55:56.732Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/maggieresume-ea2fd/versions 200
+[debug] [2024-06-29T15:00:58.743Z] ----------------------------------------------------------------------
+[debug] [2024-06-29T15:00:58.746Z] Command:       /Users/maggiewang/.nvm/versions/node/v20.15.0/bin/node /Users/maggiewang/.nvm/versions/node/v20.15.0/bin/firebase deploy --only hosting
+[debug] [2024-06-29T15:00:58.747Z] CLI Version:   13.12.0
+[debug] [2024-06-29T15:00:58.747Z] Platform:      darwin
+[debug] [2024-06-29T15:00:58.747Z] Node Version:  v20.15.0
+[debug] [2024-06-29T15:00:58.748Z] Time:          Sat Jun 29 2024 23:00:58 GMT+0800 (Taipei Standard Time)
+[debug] [2024-06-29T15:00:58.748Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-29T15:00:58.834Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-29T15:00:58.834Z] > authorizing via signed-in user (maggie.mapleleaf@gmail.com)
+[debug] [2024-06-29T15:00:58.834Z] [iam] checking project maggieresume-ea2fd for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-06-29T15:00:58.837Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/maggieresume-ea2fd:testIamPermissions [none]
+[debug] [2024-06-29T15:00:58.837Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/maggieresume-ea2fd:testIamPermissions x-goog-quota-user=projects/maggieresume-ea2fd
+[debug] [2024-06-29T15:00:58.837Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/maggieresume-ea2fd:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-06-29T15:00:59.097Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/maggieresume-ea2fd:testIamPermissions 200
+[debug] [2024-06-29T15:00:59.097Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/maggieresume-ea2fd:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-06-29T15:00:59.098Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/maggieresume-ea2fd [none]
+[debug] [2024-06-29T15:00:59.429Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/maggieresume-ea2fd 200
+[debug] [2024-06-29T15:00:59.430Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/maggieresume-ea2fd {"projectId":"maggieresume-ea2fd","projectNumber":"449740542656","displayName":"maggieresume","name":"projects/maggieresume-ea2fd","resources":{"hostingSite":"maggieresume-ea2fd"},"state":"ACTIVE","etag":"1_b8afaa89-33f6-4f46-91ef-a1b67e484208"}
+[info] 
+[info] === Deploying to 'maggieresume-ea2fd'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2024-06-29T15:00:59.435Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/maggieresume-ea2fd/versions [none]
+[debug] [2024-06-29T15:00:59.435Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/maggieresume-ea2fd/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2024-06-29T15:01:00.275Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/maggieresume-ea2fd/versions 200
